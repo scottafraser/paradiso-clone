@@ -16,14 +16,16 @@ import { FirebaseListObservable } from 'angularfire2/database';
 export class ProgrammeComponent implements OnInit {
   shows: FirebaseListObservable<any[]>;
 
-  constructor(private router: Router, private showService: ShowService) {}
+  constructor(
+    private router: Router,
+    private showService: ShowService) {}
 
   ngOnInit() {
     this.shows = this.showService.getShows();
   }
 
-  goToDetailPage(clickedShow: Show) {
-    this.router.navigate(['shows', clickedShow.id]);
+  goToDetailPage(clickedShow) {
+    this.router.navigate(['shows', clickedShow.$key]);
   }
 
 }

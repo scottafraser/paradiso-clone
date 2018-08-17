@@ -1,5 +1,13 @@
-<h1>Portlandiso</h1>
+<div class="header"> 
+    <span class="icon"></span>
+        <p>Menu</p> 
+        <p>Programme</p>
+        <p>Search</p>
+</div>
 
-<div *ngFor="let show of shows | async" (click)="goToDetailPage(show)">
+<h1 class="logo">Portlandiso</h1>
+
+<div class="row" id="showList" *ngFor="let show of shows | async" (click)="goToDetailPage(show)">
     <h3><em>{{show.name}}</em> by {{show.date}}{{show.time}}</h3>
+    <hr>
 </div>

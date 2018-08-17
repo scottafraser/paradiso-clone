@@ -1,0 +1,23 @@
+{ "shows": [{
+    "name": "Scott",
+    "venue": "Scotts House",
+    "date": "12-23-98",
+    "time": "20:00",
+    "blurb": "The best show on earth",
+    "description": "lknsfklsdhagfkjsdnfgkjdsbgkasdkjgnjsdklngl;hsadnfndslfn;sdF",
+    "price": "20",
+    "soldOut": "false",
+    "id": "1"
+    },{
+    "name": "Charles in Charge",
+    "venue": "Scotts House",
+    "date": "09-22-09",
+    "time": "20:00",
+    "blurb": "The best show on earth",
+    "description": "lknsfklsdhagfkjsdnfgkjdsbgkasdkjgnjsdklngl;hsadnfndslfn;sdF",
+    "price": "20",
+    "soldOut": "false",
+    "id": "2"
+  }]
+}
+

@@ -1,5 +1,5 @@
 <h1>Portlandiso</h1>
 
-<div *ngFor="let show of shows" (click)="goToDetailPage(show)">
+<div *ngFor="let show of shows | async" (click)="goToDetailPage(show)">
     <h3><em>{{show.name}}</em> by {{show.date}}{{show.time}}</h3>
 </div>

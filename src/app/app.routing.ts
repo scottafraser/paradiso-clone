@@ -3,6 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { ProgrammeComponent } from './programme/programme.component';
 import { AboutComponent } from './about/about.component';
 import { SearchComponent } from './search/search.component';
+import { ShowDetailComponent } from './show-detail/show-detail.component';
 
 const appRoutes: Routes = [
     {
@@ -16,7 +17,12 @@ const appRoutes: Routes = [
       {
         path: 'search',
         component: SearchComponent
+      },
+      {
+        path: 'shows/:id',
+        component: ShowDetailComponent
       }
+
     ];
 
 export const routing: ModuleWithProviders = RouterModule.forRoot(appRoutes);

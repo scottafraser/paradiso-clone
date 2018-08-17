@@ -8,6 +8,7 @@ import { ProgrammeComponent } from './programme/programme.component';
 import { routing } from './app.routing';
 import { AboutComponent } from './about/about.component';
 import { SearchComponent } from './search/search.component';
+import { ShowDetailComponent } from './show-detail/show-detail.component';
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import { SearchComponent } from './search/search.component';
     AppComponent,
     ProgrammeComponent,
     AboutComponent,
-    SearchComponent
+    SearchComponent,
+    ShowDetailComponent
   ],
   imports: [
     BrowserModule,

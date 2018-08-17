@@ -17,6 +17,15 @@ the user can click on a show and get and info modal? with information on artist,
 
 the search bar should transform and pop out on scroll
 
+show class:
+        public name: string,
+        public date: string,
+        public venue: string,
+        public description: string,
+        public price: number,
+        public soldOut: boolean,
+        public id: number
+
 
 
 pages for routing

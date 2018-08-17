@@ -1,27 +1,56 @@
-# Paradiso
+# Paradiso Clone
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.5.
+This project is a clone of the dutch venue webiste, paradiso
 
-## Development server
+#### Epicodus JavaScript Week 4 8/17/18
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+#### Scott Fraser
 
-## Code scaffolding
+## Description
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Excersise in API calls
 
-## Build
+## Specs
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+See specs.md in root file of this app for user story and basic mapping.
 
-## Running unit tests
+There is still a lot of CSS work to do, but I also want to get the songkick API wired up and use it as a local portland concert search.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Setup on OSX
 
-## Running end-to-end tests
+* Clone the repo
+* `yarn` to install dependencies
+* `ng serve --open` to build and start the dev server
+*  not sure how to to export firebase data yet
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+## Contribution Requirements
 
-## Further help
+1. Clone the repo
+1. Make a new branch
+1. Commit and push your changes
+1. Create a PR
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+## Technologies Used
+
+* JavaScript
+* Node.js
+* Yarn
+* Angular CLI 5.2
+* jQuery 3.3.1
+* Bootstrap 4.1.3
+* Babel
+* Webpack
+* ESLint
+* Jasmine
+* Karma
+
+## Links
+
+* Paradiso https://www.paradiso.nl/en/
+* github https://github.com/scottafraser/paradiso-clone.git
+
+## License
+
+This software is licensed under the MIT license.
+
+Copyright (c) 2018 **Scott Fraser**

@@ -6,19 +6,45 @@ body{
 } 
 
 html {
-    background: orange;
+    background: #FB8D3B;
 }
 
 .header {
     background: white;
     color: orange;
+    position: fixed;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    max-width: 80%;
     box-shadow: 0.4em 0.4em 1em -0.2em;
     font-size: 22px;
     font-weight: bold; 
+    width: 100%; /* Full width */
+}
+
+.photos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center
+}
+
+.img {
+    margin: 5px;
+    transition: all 2s;
+}
+
+img:hover {
+    transform: scale (1.1);
+   }
+
+.filter {
+    height: 300px;
+    width: 100%;
+}
+
+.byDate {
+    display: block;
+    background: darkorange;
 }
 
 #showList {

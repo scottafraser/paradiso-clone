@@ -17,11 +17,13 @@
         <div class="grid-item" id="pic5"><h2>Puppers</h2></div>
     </div>
 </div>
-<div class="filter-search">
-        <h5 class="left-select" id="by-date">By Date</h1>
-        <h5 class="right-select" id="by-artist">Artist a/z</h1>
-        <h5 class="left-select" id="normal-list">Normal</h1>
-        <h5 class="right-select" id="compact-list">Compact</h1>
+<div class="search-box">
+    <div class="filter-search">
+            <h5 class="left-select" id="by-date">By Date</h5>
+            <h5 class="right-select" id="by-artist">Artist a/z</h5>
+            <h5 class="left-select" id="normal-list">Normal</h5>
+            <h5 class="right-select" id="compact-list">Compact</h5>
+    </div>
 </div>
 
 <div class="row" id="showList" *ngFor="let show of shows | async" (click)="goToDetailPage(show)">

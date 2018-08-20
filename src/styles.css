@@ -153,14 +153,20 @@ hr {
     grid-row:  3 / span 1
   }
 
+  .search-box {
+      height: 20%;
+      display: flex;
+      
+  }
+
   .filter-search{
-      width: 50%;
+      margin: 10% 0% 5% 0%;
       height: 80px;
       background-color: #e35800;
       color: white;
       display: grid;
-      text-align: center;
       grid-template-columns: 1fr 1fr 1fr 1fr;
+      align-self: flex-end;
   }
 
   #by-date {

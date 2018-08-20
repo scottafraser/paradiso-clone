@@ -17,36 +17,48 @@ html {
     color: orange;
     position: sticky;
     top: 10px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: 1fr 4fr 2fr 2fr;
     box-shadow: 0.4em 0.4em 1em -0.2em;
     font-size: 22px;
     font-weight: bold; 
     width: 110%;
+    height: 70px;
+    overflow: hidden;
     z-index: 3;
     margin-left: -5%;
     margin-right: 5%;
-
 }
 
-.container {
+.hamburger {
+    text-align: center;
+    grid-column: 1 ;
+}
 
+.menu {
+    grid-column: 2;
+}
+
+.filter {
+    grid-column: 3;
+}
+
+.search {
+    grid-column: 4;
+}
+
+container {
     margin: 0%;
     padding: 0%;
 }
 
-.logo-row {
-    display: flex;
-    bottom: -40%;
-}
-
 .logo {
-   font-size: 10em;
+   font-size: 15em;
    align-content: center;
    justify-content: center;
    z-index: 2;
    position: absolute;
+   margin: 0%;
    
 }
 
@@ -87,7 +99,7 @@ hr {
 
 .grid-container {
     width:100%;
-    padding-top: 25%;
+    padding-top: 15%;
     height: 1000px;
     width: 1000px;
     display: grid;
@@ -105,8 +117,6 @@ hr {
 }
 
   .grid-item2 {
-    /* height: 33%;
-    width: 33%; */
     background-image: url("https://www.petmd.com/sites/default/files/petmd-shaking-puppy.jpg");
     background-size: 100% 100%;
     grid-column: 3 / span 1;
@@ -114,8 +124,6 @@ hr {
   }
 
   .grid-item3 {
-    /* height: 66%;
-    width: 33%; */
     background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIhk3Jjs_VeDPXP8hFobzlghGeWW8WGioHtvCPzXIIt9UeuzXg");
     background-size: 100% 100%;
     grid-column: 3 / span 2;
@@ -123,8 +131,6 @@ hr {
   }
 
   .grid-item4 {
-    /* height: 33%;
-    width: 33%; */
     background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQp_3glY3z1_a-4kQG7tkknCRN9xGRUEnIC0T3twaEy9taGyMWhAw");
     background-size: 100% 100%;
     grid-column: 1 / span 1;
@@ -132,14 +138,8 @@ hr {
   }
 
   .grid-item5 {
-    /* height: 33%;
-    width: 33%; */
     background-image: url("https://cdn.petcarerx.com/LPPE/images/articlethumbs/Puppy-Behavior-from-Week-to-Week-Large.jpg");
     background-size: 100% 100%;
     grid-column: 2 / span 1;
     grid-row:  3 / span 1
   }
-
-.search {
-    background: #E75621
-}

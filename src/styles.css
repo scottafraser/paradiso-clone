@@ -166,7 +166,7 @@ hr {
       color: white;
       display: grid;
       grid-template-columns: 1fr 1fr 1fr 1fr;
-      align-self: flex-end;
+      
   }
 
   #by-date {

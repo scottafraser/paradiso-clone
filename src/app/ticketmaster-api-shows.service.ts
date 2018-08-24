@@ -13,7 +13,7 @@ export class TicketmasterApiShowsService {
   }
 
   getShowById(showId: string) {
-    return this.http.get(`https://app.ticketmaster.com/discovery/v2/events.json?id=${showId}&countryCode=CA&apikey=${API_KEY}`);
+    return this.http.get(`https://app.ticketmaster.com/discovery/v2/events.json?id=${showId}&apikey=${API_KEY}`);
   }
 
 }

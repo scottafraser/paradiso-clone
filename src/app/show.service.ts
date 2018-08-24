@@ -12,11 +12,7 @@ export class ShowService {
 
   getShows() {
    return this.shows;
-  }
 
-  getShowById(showId: string) {
-    return this.database.object('shows/' + showId);
-  }
 
 }
-
+}

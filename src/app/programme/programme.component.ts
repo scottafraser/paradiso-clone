@@ -18,8 +18,6 @@ export class ProgrammeComponent implements OnInit {
   shows: any[];
   noShows = false;
 
-
-
   constructor(private router: Router, private apiShows: TicketmasterApiShowsService) { }
 
     ngOnInit() {

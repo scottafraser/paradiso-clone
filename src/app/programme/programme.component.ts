@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { Show } from '../show.model';
 import { Router } from '@angular/router';
 import {ShowService} from '../show.service';
@@ -19,18 +19,18 @@ export class ProgrammeComponent implements OnInit {
   noShows = false;
 
 
-  constructor(private http: Http, private apiShows: TicketmasterApiShowsService) { }
+
+  constructor(private router: Router, private apiShows: TicketmasterApiShowsService) { }
 
     ngOnInit() {
-      // this.shows = null;
+      this.shows = [];
       this.apiShows.getPDXShows().subscribe(response => {
-        if (response.json().shows.length > 0) {
-          this.shows = response.json();
-          console.log(this.shows);
+        if (response.json()._embedded.events.length > 0) {
+          this.shows = response.json()._embedded.events;
         }
+        console.log(this.shows);
       });
   }
-
 
   goToDetailPage(clickedShow) {
     this.router.navigate(['shows', clickedShow.$key]);

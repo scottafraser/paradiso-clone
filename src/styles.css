@@ -14,7 +14,7 @@ html {
 
 .header {
     background: white;
-    color: orange;
+    color:black;
     position: sticky;
     top: 10px;
     display: flex;
@@ -30,6 +30,9 @@ html {
     margin-right: 5%;
 }
 
+.header p {
+    color:orange;
+}
 .hamburger{
   height: 70px;
   width: 70px;
@@ -204,7 +207,7 @@ transform: scale(1.1);
   }
 
   #show-list {
-    displat: flex;
+    display: flex;
     transition: all 0.5s ease;
     padding-left: 0%;
   }
@@ -215,5 +218,5 @@ transform: scale(1.1);
   }
 
   .show-time {
-      align-items: flex-end;
+      justify-content: flex-end;
   }

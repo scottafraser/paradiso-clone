@@ -30,8 +30,9 @@ export class ProgrammeComponent implements OnInit {
       });
   }
 
+
   goToDetailPage(clickedShow) {
-    this.router.navigate(['shows', clickedShow.$key]);
+    this.router.navigate(['shows', clickedShow.id]);
   }
 
 }

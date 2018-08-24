@@ -14,14 +14,17 @@ import { Http } from '@angular/http';
   providers: [TicketmasterApiShowsService]
 })
 export class ShowDetailComponent implements OnInit {
-  shows: any[] = null;
+  show: any[] = null;
   constructor(private apiShows: TicketmasterApiShowsService, private http: Http) { }
 
-  getAPIShows() {
-    this.apiShows.getPDXShows().subscribe(response => {
-      this.shows = response.json();
-    });
-  }
+  getShowByID(id) {
+      this.show = [];
+      this.apiShows.getShowById(id).subscribe(response => {
+        if (response.json()._embedded.events.length > 0) {
+          this.show = response.json()._embedded.events;
+        }
+      });
+    }
 
   ngOnInit() {
     }

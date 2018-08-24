@@ -12,4 +12,8 @@ export class TicketmasterApiShowsService {
     return this.http.get(`https://app.ticketmaster.com/discovery/v2/events.json?apikey=${API_KEY}&postalCode=97214`);
   }
 
+  getShowById(showId: string) {
+    return this.http.get(`https://app.ticketmaster.com/discovery/v2/events.json?id=${showId}&countryCode=CA&apikey=${API_KEY}`);
+  }
+
 }

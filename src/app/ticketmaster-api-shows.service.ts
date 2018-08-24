@@ -6,11 +6,10 @@ import {API_KEY} from './api-keys';
 @Injectable()
 export class TicketmasterApiShowsService {
 
-  constructor(private http: Http) { }
+  constructor(private http: Http, private apiShows: TicketmasterApiShowsService) { }
 
   getPDXShows() {
-    return this.http.get(`https://app.ticketmaster.com/discovery/v2/events.json?
-      apikey=78YdtipIqhSGSN23YM5rs8yRQZbWoTeT&postalCode=97214`);
+    return this.http.get(`https://app.ticketmaster.com/discovery/v2/events.json?apikey=${API_KEY}&postalCode=97214`);
   }
 
 }

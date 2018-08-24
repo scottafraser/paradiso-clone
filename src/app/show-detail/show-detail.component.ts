@@ -5,6 +5,7 @@ import { Show } from '../show.model';
 import { TicketmasterApiShowsService } from '../ticketmaster-api-shows.service';
 import {ShowService} from '../show.service';
 import { FirebaseObjectObservable } from 'angularfire2/database';
+import { Http } from '@angular/http';
 
 @Component({
   selector: 'app-show-detail',
@@ -14,7 +15,7 @@ import { FirebaseObjectObservable } from 'angularfire2/database';
 })
 export class ShowDetailComponent implements OnInit {
   shows: any[] = null;
-  constructor(private apiShows: TicketmasterApiShowsService) { }
+  constructor(private apiShows: TicketmasterApiShowsService, private http: Http) { }
 
   getAPIShows() {
     this.apiShows.getPDXShows().subscribe(response => {

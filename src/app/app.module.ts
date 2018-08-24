@@ -7,6 +7,7 @@ import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
+
 import { AppComponent } from './app.component';
 import { ProgrammeComponent } from './programme/programme.component';
 import { routing } from './app.routing';

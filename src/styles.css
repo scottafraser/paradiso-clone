@@ -203,7 +203,8 @@ transform: scale(1.1);
     grid-column: 4;
   }
 
-  #show-list  {
+  #show-list {
+    displat: flex;
     transition: all 0.5s ease;
     padding-left: 0%;
   }
@@ -211,4 +212,8 @@ transform: scale(1.1);
   #show-list:hover {
     color: grey;
     padding-left: 10%;
+  }
+
+  .show-time {
+      align-items: flex-end;
   }

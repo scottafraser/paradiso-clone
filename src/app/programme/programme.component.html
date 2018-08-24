@@ -41,6 +41,7 @@
 </div>
 
 <div class="row" id="show-list" *ngFor="let show of shows" (click)="goToDetailPage(show)">
-    <h3><em>{{show.name}}</em> by {{show.date}}{{show.time}}</h3>
+    <h3><em>{{show.name}}</em> by <span class="show-time">{{show.dates.start.localTime}}</span></h3>
+    <h4>{{show.dates.start.localDate}}{{show._embedded.venues[0].name}}</h4>
     <hr>
 </div>

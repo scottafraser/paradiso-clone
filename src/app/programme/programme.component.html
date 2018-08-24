@@ -1,12 +1,5 @@
 <div class="header"> 
-        <div class="hamburger">
-            <span></span>
-            <br>
-            <span></span>
-            <br>
-            <span></span>
-            
-        </div>
+        <div class="hamburger"> <img src="https://www.costavida.com/_images/header/mobile-menu-icon-orange.png" alt=""></div>
         <div class="menu"><p>Menu</p></div>
         <div class="filter"><p>Program</p></div>
         <div class="search"><p>Search</p></div>
@@ -47,7 +40,7 @@
     </div>
 </div>
 
-<div class="row" id="showList" *ngFor="let show of shows" (click)="goToDetailPage(show)">
+<div class="row" id="show-list" *ngFor="let show of shows" (click)="goToDetailPage(show)">
     <h3><em>{{show.name}}</em> by {{show.date}}{{show.time}}</h3>
     <hr>
 </div>

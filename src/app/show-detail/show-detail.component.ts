@@ -14,8 +14,14 @@ import { Http } from '@angular/http';
   providers: [TicketmasterApiShowsService]
 })
 export class ShowDetailComponent implements OnInit {
-  show: any[] = null;
-  constructor(private apiShows: TicketmasterApiShowsService, private http: Http) { }
+  show = [];
+  showId = null;
+  showToDisplay;
+
+  constructor(private route: ActivatedRoute,
+     private location: Location,
+     private apiShows: TicketmasterApiShowsService,
+      private http: Http) { }
 
   getShowByID(id) {
       this.show = [];
@@ -27,5 +33,12 @@ export class ShowDetailComponent implements OnInit {
     }
 
   ngOnInit() {
+    this.route.params.forEach((urlParameters) => {
+      this.showId = urlParameters['id'];
+      console.log(this.showId);
+    });
+    this.showToDisplay = this.apiShows.getShowById(this.showId);
+    console.log(this.showToDisplay);
+
     }
   }

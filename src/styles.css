@@ -108,29 +108,28 @@ hr {
     grid-template-rows: 1fr 1fr 1fr;
     z-index: 1;
     position: relative;
-    
   }
 
 .grid-item {
- display: flex;  
+    display: flex;
 }
-/* 
-.details{
-    z-index: 2;
-    position: absolute;
-    bottom: 0%;
-    left: 0%
-/* } */
 
-.grid-item img{
-    position: relative;
+.grid-item :hover {
+
+}
+
+.grid-item img {
     width: 100%;
     height: 100%;
-    z-index: 1
-} 
+}
+
+.details {
+    display: flex;
+    position: absolute;
+    align-self: flex-end;
+}
 
 #pic1 {
-    background-size: 100% 100%;   
     grid-column: 1 / span 2;
     grid-row:  1 / span 2;
     

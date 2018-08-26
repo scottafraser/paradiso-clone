@@ -1,0 +1,24 @@
+#details-header img {
+    width: 100%;
+    margin-bottom: none;
+}
+
+#details-body {
+    color: black;
+    background-color: white;
+    margin-top: none;
+    display: flex;
+    flex-direction: column;
+    padding: 10%;
+}
+
+#details-body h1{
+    margin: none;
+}
+
+.link {
+    float: right;
+    position: sticky;
+    width: 105;
+    background-color: grey;
+}

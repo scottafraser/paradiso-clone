@@ -9,7 +9,7 @@ body{
 } 
 
 html {
-    background: #FB8D3B;
+    background: black;
 }
 
 .header {
@@ -30,9 +30,9 @@ html {
     margin-right: 5%;
 }
 
-.header p {
+/* .header p {
     color:orange;
-}
+} */
 .hamburger{
   height: 70px;
   width: 70px;
@@ -94,7 +94,7 @@ container {
 hr {
     border: none;
     height: 1px;
-    background-color: #ffc266;
+    background-color: grey;
     width: 80%;
 }
 

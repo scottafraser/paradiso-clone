@@ -24,14 +24,25 @@ export class ShowDetailComponent implements OnInit {
       private http: Http) { }
 
 
+  // ngOnInit() {
+  //   this.route.params.forEach((urlParameters) => {
+  //     this.showId = urlParameters['id'];
+  //   });
+  //   this.apiShows.getShowById(this.showId).subscribe(dataLastEmittedFromObserver => {
+  //     this.showToDisplay = dataLastEmittedFromObserver;
+  //   console.log(this.showToDisplay);
+  //   });
+  // }
+
   ngOnInit() {
     this.route.params.forEach((urlParameters) => {
       this.showId = urlParameters['id'];
     });
-    this.apiShows.getShowById(this.showId).subscribe(dataLastEmittedFromObserver => {
-      this.showToDisplay = dataLastEmittedFromObserver;
-    console.log(this.showToDisplay);
+    this.apiShows.getShowById(this.showId).subscribe(response => {
+        this.showToDisplay = response.json()._embedded.events;
+      console.log(this.showToDisplay);
     });
   }
+
 
 }

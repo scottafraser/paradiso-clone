@@ -7,6 +7,7 @@ import {ShowService} from '../show.service';
 import { FirebaseObjectObservable } from 'angularfire2/database';
 import { Http } from '@angular/http';
 
+
 @Component({
   selector: 'app-show-detail',
   templateUrl: './show-detail.component.html',

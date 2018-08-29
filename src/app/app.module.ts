@@ -15,8 +15,6 @@ import { AboutComponent } from './about/about.component';
 import { SearchComponent } from './search/search.component';
 import { ShowDetailComponent } from './show-detail/show-detail.component';
 import { masterFirebaseConfig } from './api-keys';
-import { VirtualScrollModule } from 'angular2-virtual-scroll';
-
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -39,7 +37,6 @@ export const firebaseConfig = {
     HttpModule,
     HttpClientModule,
     routing,
-    VirtualScrollModule,
     AngularFireModule.initializeApp(firebaseConfig),
     AngularFireDatabaseModule,
     BrowserAnimationsModule

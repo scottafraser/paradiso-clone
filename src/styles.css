@@ -30,9 +30,6 @@ html {
     margin-right: 5%;
 }
 
-/* .header p {
-    color:orange;
-} */
 .hamburger{
   height: 70px;
   width: 70px;
@@ -209,7 +206,13 @@ transform: scale(1.1);
   #show-list {
     display: flex;
     transition: all 0.5s ease;
+    height: 200px;
     padding-left: 0%;
+  }
+
+  #show-list h1 {
+    width: 10%;
+    padding-right: 10px;
   }
 
   #show-list:hover {
@@ -217,6 +220,11 @@ transform: scale(1.1);
     padding-left: 10%;
   }
 
+  #name {
+      width: 80%;
+  }
+
   .show-time {
-      justify-content: flex-end;
+    position: absolute;
+    right: 20%; 
   }

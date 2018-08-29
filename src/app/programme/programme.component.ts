@@ -35,25 +35,15 @@ export class ProgrammeComponent implements OnInit {
       });
   }
 
-  // sortShows(shows) {
-  //     let show = shows[0];
-  //     for (show = 0; show > this.shows.length; show++) {
-  //       if (show.dates.start.localDate !== show.dates.start.localDate.length - 1 ) {
-  //         this.dates.push(show);
-  //       } else if (show.dates.start.localDate === show.dates.start.localDate.length - 1 ) {
-  //         this.showsByDates.push(show.dates.start.localDate);
-  //       }
-  //     }
-  //   return this.showsByDates;
-  //   }
-
-
   @HostListener('window:scroll', ['$event'])
   doSomething() {
-    const height = document.getElementById('body').offsetHeight;
+    const height = setTimeout(document.getElementById('body').offsetHeight, 0);
     const bottomHeight = window.pageYOffset + window.innerHeight;
+    console.log(height, bottomHeight);
+
     if (height === bottomHeight) {
       alert('bottom!');
+
     }
   }
 

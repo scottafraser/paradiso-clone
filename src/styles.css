@@ -182,11 +182,12 @@ transform: scale(1.1);
       height: 80px;
       background-color: white;
       color: grey;
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
+      display: flex;
+      flex-direction: row;
+      /* grid-template-columns: 1fr 1fr 1fr 1fr; */
       
   }
-
+/* 
   #by-date {
       grid-column: 1;
   }
@@ -201,7 +202,7 @@ transform: scale(1.1);
 
   #compact-list {
     grid-column: 4;
-  }
+  } */
 
   #show-list {
     display: flex;

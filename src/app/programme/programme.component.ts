@@ -7,9 +7,6 @@ import { Observable } from 'rxjs/Observable';
 import { Http, Response } from '@angular/http';
 import { TicketmasterApiShowsService } from '../ticketmaster-api-shows.service';
 
-
-
-
 @Component({
   selector: 'app-programme',
   templateUrl: './programme.component.html',
@@ -22,6 +19,7 @@ export class ProgrammeComponent implements OnInit {
   noShows = false;
   dates: any[];
   showsByDates: any[];
+  nextShows: any[];
 
   constructor(private router: Router, private apiShows: TicketmasterApiShowsService) { }
 
@@ -37,13 +35,17 @@ export class ProgrammeComponent implements OnInit {
 
   @HostListener('window:scroll', ['$event'])
   doSomething() {
-    const height = setTimeout(document.getElementById('body').offsetHeight, 0);
+    const height = document.getElementById('body').scrollHeight;
     const bottomHeight = window.pageYOffset + window.innerHeight;
-    console.log(height, bottomHeight);
 
     if (height === bottomHeight) {
-      alert('bottom!');
-
+      this.nextShows = null;
+      this.apiShows.getAlotOfPDXShowsNextPage().subscribe(response => {
+        if (response.json()._embedded.events.length > 0) {
+          this.nextShows = response.json()._embedded.events;
+        }
+        console.log(this.nextShows);
+      });
     }
   }
 

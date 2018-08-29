@@ -1,6 +1,7 @@
 export class Show {
     constructor (
         public name: string,
+        // public page: number,
         // public venue: string,
         // public date: string,
         // public time: number,

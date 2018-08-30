@@ -32,12 +32,24 @@
         </div>
     </div>
 </div>
-<div class="search-box">
+<!-- <div class="search-box">
     <div class="filter-search">
             <h5 class="left-select" id="by-date">By Date</h5>
             <h5 class="right-select" id="by-artist">Artist a/z</h5>
             <h5 class="left-select" id="normal-list">Normal</h5>
             <h5 class="right-select" id="compact-list">Compact</h5>
+    </div>
+</div> -->
+<div>
+    <h2>Today</h2>
+</div>
+<div class="scrolling-wrapper-flexbox">
+    
+    <div *ngFor="let show of shows">
+        <div class="today" *ngIf="show.dates.start.localDate == today">
+        <img src="{{show.images[3].url}}" alt="">
+            <h4 class="show-name">{{show.name}}</h4>
+        </div>
     </div>
 </div>
 

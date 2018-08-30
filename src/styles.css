@@ -139,6 +139,7 @@ transform: scale(1.1);
     display: flex;
     position: absolute;
     align-self: flex-end;
+    width: 250px;
 }
 
 #pic1 {

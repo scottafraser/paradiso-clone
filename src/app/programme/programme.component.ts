@@ -16,12 +16,20 @@ import { TicketmasterApiShowsService } from '../ticketmaster-api-shows.service';
 
 export class ProgrammeComponent implements OnInit {
   shows: any[];
+  today: string;
   noShows = false;
   dates: any[];
   showsByDates: any[];
   nextShows: any[];
 
   constructor(private router: Router, private apiShows: TicketmasterApiShowsService) { }
+
+  getToday() {
+    const today  = new Date;
+    this.today = today.toISOString().slice(0, 10);
+    return this.today;
+  }
+
 
     ngOnInit() {
       this.shows = [];
@@ -31,6 +39,7 @@ export class ProgrammeComponent implements OnInit {
         }
         console.log(this.shows);
       });
+      this.getToday();
   }
 
   @HostListener('window:scroll', ['$event'])

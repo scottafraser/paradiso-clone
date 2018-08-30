@@ -14,3 +14,37 @@
     background-color: #777;
     display: block;
   }
+
+  .scrolling-wrapper-flexbox {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: -ms-autohiding-scrollbar; 
+  position: relative;
+}
+
+  .today {
+    display: flex;
+    flex: 0 0 auto; 
+ 
+    height: 100%;
+  }
+
+  .show-name{
+    z-index: 10;
+    position: absolute;
+    align-self: flex-end;
+    bottom: 5px;
+    padding: 5px;
+    width: 250px;
+  }
+
+  .today img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    z-index: 2;
+    position: relative;
+   
+  }

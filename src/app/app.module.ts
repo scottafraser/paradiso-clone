@@ -15,6 +15,7 @@ import { AboutComponent } from './about/about.component';
 import { SearchComponent } from './search/search.component';
 import { ShowDetailComponent } from './show-detail/show-detail.component';
 import { masterFirebaseConfig } from './api-keys';
+import { AngularFontAwesomeModule } from 'angular-font-awesome';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -37,6 +38,7 @@ export const firebaseConfig = {
     HttpModule,
     HttpClientModule,
     routing,
+    AngularFontAwesomeModule,
     AngularFireModule.initializeApp(firebaseConfig),
     AngularFireDatabaseModule,
     BrowserAnimationsModule

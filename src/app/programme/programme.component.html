@@ -1,6 +1,6 @@
 <div id="body">
 <div class="header"> 
-        <div class="hamburger"> <img src="https://www.costavida.com/_images/header/mobile-menu-icon-orange.png" alt=""></div>
+        <div class="hamburger"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARMAAAC3CAMAAAAGjUrGAAAAMFBMVEX///8AAADl5eX09PSurq7V1dUICAhTU1Orq6tJSUnp6enj4+Pd3d1DQ0P6+vq9vb1CIEbWAAAA8klEQVR4nO3dOQ4CQRAEQe5jWeD/v8VGaSGMXiPiCWlWjzS7HQAAAAAAAAAAAADwbT0PW6YL1HM/7DZdoK7TTU7TBUqT0qQ0KU1Kk9KkNClNSpPSpDQpTUqT0qQ0KU1Kk9KkNKn7dJMNbtTHaa/pAgAAAAD86rq/jNri9miPLU1Kk9KkNClNSpPSpDQpTUqT0qQ0KU1Kk9KkNClNSpPSpLwFrfdp1m2dLgAAAAAA/1sOsx7H6QJljy27fWlSmpQmpUlpUpqUJqVJaVKalCalSWlSmpQmpUlpUpqUJuWPs5q+ZRw2eMsAAAAAAAAAAAAAYMIHx3su3LQF590AAAAASUVORK5CYII" alt=""></div>
         <div class="menu"><a href="/search">Filter</a></div>
         <div class="filter"><p>Program</p></div>
         <div class="search"><p>Search</p></div>
@@ -11,24 +11,24 @@
 <div class="photos">
     <div class="grid-container">
         <div class="grid-item" id="pic1">
-         <img src="{{shows[5].images[3].url}}" alt="">
-         <span class="details"><h2>{{shows[5].name}}</h2></span>
+             <img src="{{shows[5].images[3].url}}" alt="" (click)="goToDetailPage(shows[5])">
+             <span class="details"><h2>{{shows[5].name}} <br> {{shows[5].dates.start.localDate | date}}</h2></span>
         </div>
         <div class="grid-item" id="pic2">
-            <img src="{{shows[1].images[3].url}}" alt="">
-            <span class="details"><h2>{{shows[1].name}}</h2></span>
+            <img src="{{shows[1].images[3].url}}" alt="" (click)="goToDetailPage(shows[1])">
+            <span class="details"><h2>{{shows[1].name}} <br> {{shows[1].dates.start.localDate | date}}</h2></span>
         </div>
         <div class="grid-item" id="pic3">
-            <img src="{{shows[2].images[3].url}}" alt="">
-            <span class="details"><h2>{{shows[2].name}}</h2></span>
+            <img src="{{shows[2].images[3].url}}" alt="" (click)="goToDetailPage(shows[2])">
+            <span class="details"><h2>{{shows[2].name}} <br> {{shows[2].dates.start.localDate | date}}</h2></span>
         </div>
         <div class="grid-item" id="pic4">
-            <img src="{{shows[3].images[3].url}}" alt="">
-            <span class="details"><h2>{{shows[3].name}}</h2></span>
+            <img src="{{shows[3].images[3].url}}" alt="" (click)="goToDetailPage(shows[3])">
+            <span class="details"><h2>{{shows[3].name}} <br> {{shows[3].dates.start.localDate | date}}</h2></span>
         </div>
         <div class="grid-item" id="pic5">
-            <img src="{{shows[0].images[3].url}}" alt="">
-            <span class="details"><h2>{{shows[0].name}}</h2></span>
+            <img src="{{shows[0].images[3].url}}" alt="" (click)="goToDetailPage(shows[0])">
+            <span class="details"><h2>{{shows[0].name}} <br> {{shows[0].dates.start.localDate | date}}</h2></span>
         </div>
     </div>
 </div>
@@ -40,14 +40,14 @@
             <h5 class="right-select" id="compact-list">Compact</h5>
     </div>
 </div> -->
-<div>
+<div id="today-title">
     <h2>Today</h2>
 </div>
 <div class="scrolling-wrapper-flexbox">
     
     <div *ngFor="let show of shows">
         <div class="today" *ngIf="show.dates.start.localDate == today">
-        <img src="{{show.images[3].url}}" alt="">
+        <img src="{{show.images[3].url}}" alt="" (click)="goToDetailPage(show)">
             <h4 class="show-name">{{show.name}}</h4>
         </div>
     </div>
@@ -67,7 +67,7 @@
 </div>
 <hr>
 </div>
-<div class="row" *ngFor="let show of nextShows" (click)="goToDetailPage(show)">
+<!-- <div class="row" *ngFor="let show of nextShows" (click)="goToDetailPage(show)">
     <div id="show-list">
         <h1>
             {{show.dates.start.localDate | date }}
@@ -80,5 +80,5 @@
         </div>
     </div>
     <hr>
-</div>
+</div> -->
 </div>

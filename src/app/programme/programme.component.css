@@ -1,19 +1,7 @@
- #container {
-    position: absolute;
-    height: auto;
-    top: 0;
-    bottom: 0;
-    width: auto;
-    left: 0;
-    right: 0;
-    overflow: auto;
-  }
-  #foo {
-    height:1000px;
-    width:1000px;
-    background-color: #777;
-    display: block;
-  }
+a {
+  text-decoration: none;
+  color: black;
+}
 
   .scrolling-wrapper-flexbox {
   display: flex;
@@ -22,6 +10,7 @@
   -webkit-overflow-scrolling: touch;
   -ms-overflow-style: -ms-autohiding-scrollbar; 
   position: relative;
+  margin-bottom: 80px;
 }
 
   .today {
@@ -32,7 +21,7 @@
   }
 
   .show-name{
-    z-index: 10;
+    z-index: 4;
     position: absolute;
     align-self: flex-end;
     bottom: 5px;
@@ -47,4 +36,12 @@
     z-index: 2;
     position: relative;
    
+  }
+
+
+  #today-title h2{
+   font-size: 5em;
+   z-index: 10;
+   padding-bottom: none;
+   margin-bottom: 0px;;
   }

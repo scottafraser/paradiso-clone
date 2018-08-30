@@ -42,10 +42,10 @@ html {
   object-fit: scale-down;
 }
 
-
-
 .menu {
     grid-column: 2;
+    display: flex;
+    align-items: center;
 }
 
 .filter {
@@ -185,25 +185,8 @@ transform: scale(1.1);
       color: grey;
       display: flex;
       flex-direction: row;
-      /* grid-template-columns: 1fr 1fr 1fr 1fr; */
       
   }
-/* 
-  #by-date {
-      grid-column: 1;
-  }
-
-  #by-artist {
-    grid-column: 2;
-  }
-
-  #normal-list {
-    grid-column: 3;
-  }
-
-  #compact-list {
-    grid-column: 4;
-  } */
 
   #show-list {
     display: flex;

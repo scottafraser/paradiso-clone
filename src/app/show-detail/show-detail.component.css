@@ -8,18 +8,48 @@
     background-color: white;
     margin-top: none;
     display: flex;
-    flex-direction: column;
-    padding: 10%;
+    padding-left: 10%;
+    padding-top: 0%;
+    margin: -5px;
 }
 
 #details-body h1{
     margin: none;
+   
 }
 
+#info {
+    padding: 5%;
+}
+
+
 .link {
-    float: right;
-    position: sticky;
-    width: 105;
-    background-color: grey;
+  display: flex;
+  height: 100px;
+  width: 30%;
+  align-content: flex-start;
+  padding: 7%;
+  padding-right: none;
+  background-color: black;
+  flex-wrap: nowrap;
+  overflow: visible;
+}
+
+.link h4 {
+    flex-wrap: nowrap;
+    width: 100%;
+    transition: all 0.5s ease;
+}
+
+
+.link a {
+    text-decoration: none;
+    color:white;
+    overflow: visible;
+    flex-wrap: nowrap;
     
+}
+
+.link a:hover {
+ padding-left: 10%;   
 }

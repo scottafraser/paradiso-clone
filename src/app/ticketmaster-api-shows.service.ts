@@ -16,7 +16,7 @@ export class TicketmasterApiShowsService {
 
   getAlotOfPDXShows() {
     return this.http.get(`https://app.ticketmaster.com/discovery/v2/events?apikey=${API_KEY}
-    &radius=20&size=25&sort=date,asc&city=portland&stateCode=OR&countryCode=US`);
+    &radius=20&size=100&sort=date,asc&city=portland&stateCode=OR&countryCode=US`);
   }
 
   getAlotOfPDXShowsNextPage() {

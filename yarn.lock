@@ -344,11 +344,19 @@ amqplib@^0.5.2:
     readable-stream "1.x >=1.1.9"
     safe-buffer "^5.0.1"
 
+angular-font-awesome@^3.1.2:
+  version "3.1.2"
+  resolved "https://registry.yarnpkg.com/angular-font-awesome/-/angular-font-awesome-3.1.2.tgz#9378732612d8e8c71e0d7c2faa0faddc7f858ec9"
+
 angular2-virtual-scroll@^0.4.9:
   version "0.4.9"
   resolved "https://registry.yarnpkg.com/angular2-virtual-scroll/-/angular2-virtual-scroll-0.4.9.tgz#aaf8c1a3ccb5ef38eddd426e64e4c2a4267fc86e"
   dependencies:
     "@tweenjs/tween.js" "^17.1.0"
+
+angular@^1.7.3:
+  version "1.7.3"
+  resolved "https://registry.yarnpkg.com/angular/-/angular-1.7.3.tgz#0f25a661d079fc84d5ccc877a2ef9d7178575ddb"
 
 angularfire2@4.0.0-rc.0:
   version "4.0.0-rc.0"
@@ -2528,6 +2536,10 @@ follow-redirects@^1.0.0:
   resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.5.5.tgz#3c143ca599a2e22e62876687d68b23d55bad788b"
   dependencies:
     debug "^3.1.0"
+
+font-awesome@^4.7.0:
+  version "4.7.0"
+  resolved "https://registry.yarnpkg.com/font-awesome/-/font-awesome-4.7.0.tgz#8fa8cf0411a1a31afd07b06d2902bb9fc815a133"
 
 for-in@^0.1.3:
   version "0.1.8"

@@ -1,15 +1,24 @@
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+  crossorigin="anonymous">
 
   <div id="details-header">
     <img src="{{showToDisplay[0].images[3].url}}">
 
   <div id="details-body">
+    <div id="info">
     <h1>{{showToDisplay[0].name}}</h1>
-    <h3>{{showToDisplay[0].dates.start.localDate}}</h3>
-    <h3>{{showToDisplay[0].dates.start.localTime}}</h3>
+    <h2>{{showToDisplay[0].classifications[0].genre.name}}</h2>
+    <h3>{{showToDisplay[0].dates.status.code}}</h3>
+    <h3>{{showToDisplay[0].dates.start.localDate | date }}</h3>
+    <h3>{{showToDisplay[0].dates.start.localTime }}</h3>
     <h3>{{showToDisplay[0]._embedded.venues[0].name}}</h3>
-    <div class="link">
-    <h4><a href="{{showToDisplay[0].outlets[0].url}}">Buy Tickets</a></h4>
+    <h2>{{showToDisplay[0]._embedded.venues[0].address.line1}}</h2>
+    <h2>{{showToDisplay[0]._embedded.venues[0].postalCode}}</h2>
     </div>
-    
- </div>
+    <div class="link">
+    <h4><a href="{{showToDisplay[0].url}}">Buy Tickets</a>
+      <i class="fas fa-arrow-right" style="color:white;"></i>
+      </h4>
+  </div>
 </div>
+

@@ -3,53 +3,55 @@
     margin-bottom: none;
 }
 
+#details-header i {
+    position: absolute;
+    padding: 5px;
+    font-size: 4em;
+    transition: all 0.5s ease;
+}
+
+#details-header i:hover {
+    font-size: 5em;
+}
+
 #details-body {
     color: black;
     background-color: white;
     margin-top: none;
+    margin-right: none;
     display: flex;
     padding-left: 10%;
     padding-top: 0%;
-    margin: -5px;
+    /* padding-right: 0%; */
 }
 
 #details-body h1{
     margin: none;
-   
 }
 
 #info {
     padding: 5%;
 }
 
-
 .link {
   display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
   height: 100px;
   width: 30%;
-  align-content: flex-start;
   padding: 7%;
   padding-right: none;
-  background-color: black;
-  flex-wrap: nowrap;
-  overflow: visible;
+  transition: font-size 2s;
 }
-
-.link h4 {
-    flex-wrap: nowrap;
-    width: 100%;
-    transition: all 0.5s ease;
-}
-
-
+  
 .link a {
     text-decoration: none;
-    color:white;
+    color:black;
     overflow: visible;
     flex-wrap: nowrap;
     
 }
 
 .link a:hover {
- padding-left: 10%;   
+ padding-left: 5%
 }

@@ -2,22 +2,28 @@
   crossorigin="anonymous">
 
   <div id="details-header">
+    <a href="/">
+      <i class="fas fa-times" style="color:white"></i>
+      </a>
     <img src="{{showToDisplay[0].images[3].url}}">
-
+    </div>
   <div id="details-body">
     <div id="info">
     <h1>{{showToDisplay[0].name}}</h1>
-    <h2>{{showToDisplay[0].classifications[0].genre.name}}</h2>
-    <h3>{{showToDisplay[0].dates.status.code}}</h3>
-    <h3>{{showToDisplay[0].dates.start.localDate | date }}</h3>
+    <h3><u>Genre</u></h3>
+     <h2>{{showToDisplay[0].classifications[0].genre.name}}</h2>
+    <h3><u>Status</u></h3>
+      <h2>{{showToDisplay[0].dates.status.code}}</h2> 
+    <h2>{{showToDisplay[0].dates.start.localDate | date }}</h2>
     <h3>{{showToDisplay[0].dates.start.localTime }}</h3>
-    <h3>{{showToDisplay[0]._embedded.venues[0].name}}</h3>
-    <h2>{{showToDisplay[0]._embedded.venues[0].address.line1}}</h2>
-    <h2>{{showToDisplay[0]._embedded.venues[0].postalCode}}</h2>
+    <h3><u>Venue</u></h3>
+      <h2>{{showToDisplay[0]._embedded.venues[0].name}}</h2>
+    <h3>{{showToDisplay[0]._embedded.venues[0].address.line1}}</h3>
+    <h4>{{showToDisplay[0]._embedded.venues[0].postalCode}}</h4>
     </div>
     <div class="link">
     <h4><a href="{{showToDisplay[0].url}}">Buy Tickets</a>
-      <i class="fas fa-arrow-right" style="color:white;"></i>
+      <i class="fas fa-arrow-right"></i>
       </h4>
   </div>
 </div>
